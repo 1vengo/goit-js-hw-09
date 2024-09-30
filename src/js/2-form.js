@@ -30,10 +30,3 @@ form.addEventListener('submit', (event) => {
     localStorage.removeItem(STORAGE_KEY);
     form.reset();
 });
-form.addEventListener('input', (event) => {
-    const currentData = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    if (!currentData) {
-        saveFormData();
-        
-    }
-})
